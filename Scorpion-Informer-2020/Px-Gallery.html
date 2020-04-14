@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+	<title>Scorpion Informer</title>
+
+<link href="stylesheets/Px-Gallery.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="stylesheets/social.css" />
+<link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.4.1/css/all.css'>   
+     
+        <meta name="theme-color" content="black">
+    <meta name="msapplication-navbutton-color" content="black">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="icon" href="1.jpg" type="" />
+    
+	<script type="text/javascript" src="js/Px-Gallery-jquery-2.2.3.min.js"></script>
+	<script type="text/javascript" src="js/Px-Gallery-pixel-metro.js"></script>
+	
+	
+</head>
+<style>
+
+
+
+.navbar-custom{
+background-color: #151717;
+	color: #FFF;
+	border-radius: 0px;
+	padding: 10px;
+}
+.navbar-custom .navbar-nav>li>a{
+	color: #FFF;font-family: Times new roman;
+	font-size: 21px;margin-left: 13px;
+}
+.navbar-custom .navbar-nav>.active>a{
+	color: #fff;background-color: #df6c43;
+}
+.navbar-custom .navbar-nav>li>a:hover{
+	background-color: #df6c43;
+}
+.navbar-custom .navbar-brand{
+color: #fff;font-size: 27px;margin-left: 15px;
+}
+.navbar-custom .navbar-brand:hover{
+color: #fff;font-size: 27px;
+    }
+.navbar-custom{
+background-color: #151717;
+	color: #FFF;
+	border-radius: 0px;
+	padding: 10px;
+}
+.navbar-custom .navbar-nav>li>a{
+	color: #FFF;
+	font-size: 19px;margin-left: 13px;
+}
+.navbar-custom .navbar-nav>.active>a{
+	color: #fff;background-color: #df6c43;
+}
+.navbar-custom .navbar-nav>li>a:hover{
+	background-color: #df6c43;
+}
+.navbar-custom .navbar-brand{
+color: #fff;font-size: 27px;margin-left: 15px;
+}
+.navbar-custom .navbar-brand:hover{
+color: #fff;font-size: 27px;
+    }
+ 
+
+
+   
+  
+
+.container {
+  margin: 0 auto;
+   
+  text-align: center;
+}
+
+    
+        
+    
+    
+        
+    
+    
+      
+    .pixel-metro {
+	position: relative;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	overflow: auto;
+}
+.pixel-metro .content-metro {
+	display: none;
+	position: absolute;
+	transform: translate(-50%,-50%);
+	top: 50%;
+	left: 50%;
+	overflow: hidden;
+	z-index: 2;
+	/*3d option */
+	perspective: 600px;
+}
+.pixel-metro .content-metro a:hover{
+	text-decoration: none;
+}
+.pixel-metro .content-metro:before {
+	content: "";
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 0;
+	z-index: 9999;
+	transition: border-color 0.5s;
+	box-sizing: border-box;
+	border-top-width: 0px;
+	border-bottom-width: 2px;
+	border-style: solid;
+	border-color: rgba(200,200,200,0);
+
+}
+.pixel-metro .content-metro:hover:before {
+	border-color: rgba(200,200,200,0.85);
+}
+.pixel-metro .content-metro .metro-sheet{
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	display: none;
+	/*3d option*/
+	transform-style: preserve-3d;
+  	transition: transform 1s;
+	
+}
+.pixel-metro .content-metro .metro-sheet:first-child {
+	display: block;
+}
+.pixel-metro .content-metro .metro-sheet .icon-metro{
+	font-size: 4.3em;
+	position: absolute;
+	transform: translate(-50%,-50%);
+	top:50%;
+	left: 50%;
+}
+.pixel-metro .content-metro .metro-sheet .text-metro{
+	padding:5px;
+}
+.pixel-metro .content-metro .metro-sheet a{
+	color:#fff;
+}
+.pixel-metro .content-metro .metro-sheet img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	/*3d option*/
+	backface-visibility: hidden;
+}
+.pixel-metro .content-metro .content-title {
+	padding: 8px;
+	background-color: rgba(0,0,0,0.65);
+	color:#eee;
+	position: absolute;
+	bottom: 0;
+}
+.pixel-metro .page-metro {
+	position: absolute;
+	top: 0;
+	right: 0;
+	padding:8px;
+}
+.pixel-metro .page-metro span{
+	width: 8px;
+	height: 8px;
+	border: 1px solid #ccc;
+	display: inline-block;
+	border-radius: 5px;
+	background-color: rgba(0,0,0,0.35);
+	margin: 0 2px;
+	cursor: pointer;
+}
+.pixel-metro .caption-smart {
+	color:#fff;
+	text-shadow: 2px 2px 3px #333;
+	position: absolute;
+	display: none;
+	opacity:0;
+}
+         
+
+</style>
+<body>
+
+	<nav class="navbar navbar-custom navbar-nav navbar-default navbar-fixed-top">
+	<div class="container-fluid">
+		<div class="row">
+		<div class="col-md-4">
+			<div class="navbar-header">
+			
+</button>
+				<a href="#" class="navbar-brand">Scorpion Informer</a>
+			</div>
+			</div>
+			<div class="col-md-8">
+			
+				<ul class="nav navbar-nav">
+				<li><a href="index.html">Home</a></li>
+				<li class="active"><a href="Px-Gallery.html">Gallery</a></li>
+				<li><a href="About-Us.html">About Us</a></li>
+				<li><a href="Contact-Us.html">Contact Us</a> </li>
+                <li><a href="enquiry.html">Enquiry</a> </li>      
+                             
+        
+			</ul>
+			</div>
+			</div>
+		
+	
+	</nav><br><br>
+
+    
+    
+		<div id="about">
+		<div class="container"><br><br><br>
+	<h1><center><strong id="ourteam">Gallery</strong></center><br></h1>
+          
+            
+     
+            
+            <section>
+		
+		<div class="your-css">
+
+			<div class="pixel-metro">
+	            <div class="content-metro" size-o="normal">
+<div class="metro-sheet"><a href="img/APPARTMENT1.jpg"><img src="img/THUMB/APPARTMENT1.jpg"></a></div>
+<div class="metro-sheet"><a href="img/APPARTMENT2.jpg"><img src="img/THUMB/APPARTMENT2.jpg"></a></div>
+
+	            </div>
+                
+	           
+	            
+            	<div class="content-metro" size-o="small">
+<div class="metro-sheet"><a href="img/APPARTMENT3.jpg"><img src="img/THUMB/APPARTMENT3.jpg"></a></div>
+<div class="metro-sheet"><a href="img/APPARTMENT4.jpg"><img src="img/THUMB/APPARTMENT4.jpg"></a></div>
+
+				</div>
+	            <div class="content-metro" size-o="small">
+<div class="metro-sheet"><a href="img/BANKALHOSAHALLI1.jpg"><img src="img/THUMB/BANKALHOSAHALLI1.jpg"></a></div>
+<div class="metro-sheet"><a href="img/BANKALHOSAHALLI2.jpg"><img src="img/THUMB/BANKALHOSAHALLI2.jpg"></a></div>
+				</div>
+
+				<div class="content-metro" size-o="small">
+<div class="metro-sheet"><a href="img/BANKALHOSAHALLI3.jpg"><img src="img/THUMB/BANKALHOSAHALLI3.jpg"></a></div>
+<div class="metro-sheet"><a href="img/BANKALHOSAHALLI4.jpg"><img src="img/THUMB/BANKALHOSAHALLI4.jpg"></a></div>
+				</div>
+
+				<div class="content-metro" size-o="small">
+<div class="metro-sheet"><a href="img/BANKALHOSAHALLI5.jpg"><img src="img/THUMB/BANKALHOSAHALLI5.jpg"></a></div>
+<div class="metro-sheet"><a href="img/BANKALSANDESH1.jpg"><img src="img/THUMB/BANKALSANDESH1.jpg"></a></div>
+				</div>
+
+	            <div class="content-metro" size-o="normal">
+	            	<a href=""><div class="metro-sheet">
+	                	<div class="text-metro">
+	                		<p><span class="glyphicon glyphicon-camera"></span></p><p>VIDEOS</p>
+	                	</div>
+	                </div></a>
+                    
+                    
+                    
+                    
+	            	<div class="metro-sheet">
+<div class="icon-metro"><a href="#"><span class="glyphicon glyphicon-camera"></span></a></div></div>
+	            </div>
+
+	           
+                <div class="content-metro" size-o="normal">
+<div class="metro-sheet"><a href="img/BANKALSANDESH2.jpg"><img src="img/THUMB/BANKALSANDESH2.jpg"></a></div>
+<div class="metro-sheet"><a href="img/BANKALSANDESH3.jpg"><img src="img/THUMB/BANKALSANDESH3.jpg"></a></div>
+	            </div>
+	            <div class="content-metro" size-o="wide">
+<div class="metro-sheet"><a href="img/BANKALSANDESH4.jpg"><img src="img/THUMB/BANKALSANDESH4.jpg"></a></div>
+<div class="metro-sheet"><a href="img/BANKALSANDESH5.jpg"><img src="img/THUMB/BANKALSANDESH5.jpg"></a></div>
+
+	            </div>
+	            
+            	<div class="content-metro" size-o="small">
+<div class="metro-sheet"><a href="img/BASRIKATTE1.jpg"><img src="img/THUMB/BASRIKATTE1.jpg"></a></div>
+<div class="metro-sheet"><a href="img/BASRIKATTE2.jpg"><img src="img/THUMB/BASRIKATTE2.jpg"></a></div>
+				</div>
+	            <div class="content-metro" size-o="small">
+<div class="metro-sheet"><a href="img/BASRIKATTE3.jpg"><img src="img/THUMB/BASRIKATTE3.jpg"></a></div>
+<div class="metro-sheet"><a href="img/BASRIKATTE4.jpg"><img src="img/THUMB/BASRIKATTE4.jpg"></a></div>
+				</div>
+
+				<div class="content-metro" size-o="small">
+<div class="metro-sheet"><a href="img/BASRIKATTE5.jpg"><img src="img/THUMB/BASRIKATTE5.jpg"></a></div>
+<div class="metro-sheet"><a href="img/BIKKARANE.jpg"><img src="img/THUMB/BIKKARANE.jpg"></a></div>
+				</div>
+
+				<div class="content-metro" size-o="small">
+<div class="metro-sheet"><a href="img/CHKM.jpg"><img src="img/THUMB/CHKM.jpg"></a></div>
+<div class="metro-sheet"><a href="img/CHKMGOWRI1.jpg"><img src="img/THUMB/CHKMGOWRI1.jpg"></a></div>
+				</div>
+
+	            <div class="content-metro" size-o="normal">
+<div class="metro-sheet"><a href="img/CHKMGOWRI2.jpg"><img src="img/THUMB/CHKMGOWRI2.jpg"></a></div>
+<div class="metro-sheet"><a href="img/CHKMGOWRI3.jpg"><img src="img/THUMB/CHKMGOWRI3.jpg"></a></div>
+
+	            </div>
+
+	            <div class="content-metro" size-o="normal">
+<div class="metro-sheet"><a href="img/CHKMGOWRI4.jpg"><img src="img/THUMB/CHKMGOWRI4.jpg"></a></div>
+<div class="metro-sheet"><a href="img/CHKMGOWRI5.jpg"><img src="img/THUMB/CHKMGOWRI5.jpg"></a></div>
+	            </div>
+               
+	            <div class="content-metro" size-o="wide">
+<div class="metro-sheet"><a href="img/CHKMGOWRI6.jpg"><img src="img/THUMB/CHKMGOWRI6.jpg"></a></div>
+<div class="metro-sheet"><a href="img/DURGADAHALLI1.jpg"><img src="img/THUMB/DURGADAHALLI1.jpg"></a></div>
+	            </div>
+	            
+            	<div class="content-metro" size-o="small">
+<div class="metro-sheet"><a href="img/DURGADAHALLI2.jpg"><img src="img/THUMB/DURGADAHALLI2.jpg"></a></div>
+<div class="metro-sheet"><a href="img/DURGADAHALLISAMPATH3.jpg"><img src="img/THUMB/DURGADAHALLISAMPATH3.jpg"></a></div>
+				</div>
+	            <div class="content-metro" size-o="small">
+<div class="metro-sheet"><a href="img/DURGADAHALLISAMPATH1.jpg"><img src="img/THUMB/DURGADAHALLISAMPATH1.jpg"></a></div>
+<div class="metro-sheet"><a href="img/DURGADAHALLISAMPATH2.jpg"><img src="img/THUMB/DURGADAHALLISAMPATH2.jpg"></a></div>
+				</div>
+
+				<div class="content-metro" size-o="small">
+<div class="metro-sheet"><a href="img/DURGADAHALLISANDESH1.jpg"><img src="img/THUMB/DURGADAHALLISANDESH1.jpg"></a></div>
+<div class="metro-sheet"><a href="img/DURGADAHALLISANDESH2.jpg"><img src="img/THUMB/DURGADAHALLISANDESH2.jpg"></a></div>
+				</div>
+
+				<div class="content-metro" size-o="small">
+<div class="metro-sheet"><a href="img/DURGADAHALLISANDESH3.jpg"><img src="img/THUMB/DURGADAHALLISANDESH3.jpg"></a></div>
+<div class="metro-sheet"><a href="img/ESHWARA1.jpg"><img src="img/THUMB/ESHWARA1.jpg"></a></div>
+				</div>
+
+	            <div class="content-metro" size-o="normal">
+<div class="metro-sheet"><a href="img/ESHWARA2.jpg"><img src="img/THUMB/ESHWARA2.jpg"></a></div>
+<div class="metro-sheet"><a href="img/ESHWARA3.jpg"><img src="img/THUMB/ESHWARA3.jpg"></a></div>
+	            </div>
+
+	            <div class="content-metro" size-o="small">
+<div class="metro-sheet"><a href="img/ESHWARA4.jpg"><img src="img/THUMB/ESHWARA4.jpg"></a></div>
+<div class="metro-sheet"><a href="img/ESHWARA5.jpg"><img src="img/THUMB/ESHWARA5.jpg"></a></div>
+				</div>
+
+				<div class="content-metro" size-o="small">
+<div class="metro-sheet"><a href="img/ESHWARA6.jpg"><img src="img/THUMB/ESHWARA6.jpg"></a></div>
+<div class="metro-sheet"><a href="img/ESHWARA7.jpg"><img src="img/THUMB/ESHWARA7.jpg"></a></div>
+				</div>
+
+	            <div class="content-metro" size-o="normal">
+<div class="metro-sheet"><a href="img/ESTATE1.jpg"><img src="img/THUMB/ESTATE1.jpg"></a></div>
+<div class="metro-sheet"><a href="img/ESTATE2.jpg"><img src="img/THUMB/ESTATE2.jpg"></a></div>
+	            </div>
+        
+                <div class="content-metro" size-o="small">
+<div class="metro-sheet"><a href="img/ESTATE3.jpg"><img src="img/THUMB/ESTATE3.jpg"></a></div>
+<div class="metro-sheet"><a href="img/ESTATE4.jpg"><img src="img/THUMB/ESTATE4.jpg"></a></div>
+				</div>
+                <div class="content-metro" size-o="small">
+<div class="metro-sheet"><a href="img/ESTATE5.jpg"><img src="img/THUMB/ESTATE5.jpg"></a></div>
+<div class="metro-sheet"><a href="img/ESTATE6.jpg"><img src="img/THUMB/ESTATE6.jpg"></a></div>
+				</div>
+	            <div class="content-metro" size-o="normal">
+<div class="metro-sheet"><a href="img/ESTATE7.jpg"><img src="img/THUMB/ESTATE7.jpg"></a></div>
+<div class="metro-sheet"><a href="img/ESTATE8.jpg"><img src="img/THUMB/ESTATE8.jpg"></a></div>
+	            </div>
+	            <div class="content-metro" size-o="normal">
+<div class="metro-sheet"><a href="img/ESTATE9.jpg"><img src="img/THUMB/ESTATE9.jpg"></a></div>
+<div class="metro-sheet"><a href="img/ESTATE10.jpg"><img src="img/THUMB/ESTATE10.jpg"></a></div>
+	            </div>
+	            <div class="content-metro" size-o="wide">
+<div class="metro-sheet"><a href="img/ESTATE11.jpg"><img src="img/THUMB/ESTATE11.jpg"></a></div>
+<div class="metro-sheet"><a href="img/ESTATE12.jpg"><img src="img/THUMB/ESTATE12.jpg"></a></div>
+	            </div>
+	            
+            	<div class="content-metro" size-o="small">
+<div class="metro-sheet"><a href="img/ESTATE13.jpg"><img src="img/THUMB/ESTATE13.jpg"></a></div>
+<div class="metro-sheet"><a href="img/GODOWN1.jpg"><img src="img/THUMB/GODOWN1.jpg"></a></div>
+				</div>
+	            <div class="content-metro" size-o="small">
+<div class="metro-sheet"><a href="img/GODOWN2.jpg"><img src="img/THUMB/GODOWN2.jpg"></a></div>
+<div class="metro-sheet"><a href="img/GODOWN3.jpg"><img src="img/THUMB/GODOWN3.jpg"></a></div>
+				</div>
+
+				<div class="content-metro" size-o="small">
+<div class="metro-sheet"><a href="img/GODOWN4.jpg"><img src="img/THUMB/GODOWN4.jpg"></a></div>
+<div class="metro-sheet"><a href="img/GODOWN5.jpg"><img src="img/THUMB/GODOWN5.jpg"></a></div>
+				</div>
+
+				<div class="content-metro" size-o="small">
+<div class="metro-sheet"><a href="img/GONIBIDU1.jpg"><img src="img/THUMB/GONIBIDU1.jpg"></a></div>
+<div class="metro-sheet"><a href="img/GONIBIDU2.jpg"><img src="img/THUMB/GONIBIDU2.jpg"></a></div>
+				</div>
+
+	            <div class="content-metro" size-o="normal">
+<div id="b1" class="metro-sheet"><a href="img/HARIHARAPURA1.jpg"><img src="img/THUMB/HARIHARAPURA1.jpg"></a></div>
+<div class="metro-sheet"><a href="img/HARIHARAPURA2.jpg"><img src="img/THUMB/HARIHARAPURA2.jpg"></a></div>
+
+	            </div>
+                <div class="content-metro" size-o="wide">
+<div class="metro-sheet"><a href="img/HARISH1.jpg"><img src="img/THUMB/HARISH1.jpg"></a></div>
+<div class="metro-sheet"><a href="img/HARISH2.jpg"><img src="img/THUMB/HARISH2.jpg"></a></div>
+	            </div>
+                <div class="content-metro" size-o="small">
+<div class="metro-sheet"><a href="img/HARISH3.jpg"><img src="img/THUMB/HARISH3.jpg"></a></div>
+<div class="metro-sheet"><a href="img/HARISH4.jpg"><img src="img/THUMB/HARISH4.jpg"></a></div>
+				</div>
+	            <div class="content-metro" size-o="small">
+<div class="metro-sheet"><a href="img/HOME1.jpg"><img src="img/THUMB/HOME1.jpg"></a></div>
+<div class="metro-sheet"><a href="img/HOME2.jpg"><img src="img/THUMB/HOME2.jpg"></a></div>
+				</div>
+
+				<div class="content-metro" size-o="small">
+<div class="metro-sheet"><a href="img/HOME3.jpg"><img src="img/THUMB/HOME3.jpg"></a></div>
+<div class="metro-sheet"><a href="img/HOME4.jpg"><img src="img/THUMB/HOME4.jpg"></a></div>
+				</div>
+
+				<div class="content-metro" size-o="small">
+<div class="metro-sheet"><a href="img/HOSAHALLI1.jpg"><img src="img/THUMB/HOSAHALLI1.jpg"></a></div>
+<div class="metro-sheet"><a href="img/HOSAHALLI2.jpg"><img src="img/THUMB/HOSAHALLI2.jpg"></a></div>
+				</div>
+                 <div class="content-metro" size-o="normal">
+<div class="metro-sheet"><a href="img/HOSAHALLI3.jpg"><img src="img/THUMB/HOSAHALLI3.jpg"></a></div>
+<div class="metro-sheet"><a href="img/HOSAHALLI4.jpg"><img src="img/THUMB/HOSAHALLI4.jpg"></a></div>
+	            </div>
+                 <div class="content-metro" size-o="normal">
+<div class="metro-sheet"><a href="img/HUIGERESACHIN.jpg"><img src="img/THUMB/HUIGERESACHIN.jpg"></a></div>
+<div class="metro-sheet"><a href="img/MYSORE3.jpg"><img src="img/THUMB/MYSORE3.jpg"></a></div>
+	            </div>
+                <div class="content-metro" size-o="normal">
+<div id="b1" class="metro-sheet"><a href="img/KADTURNITYANANDA1.jpg"><img src="img/THUMB/KADTURNITYANANDA1.jpg"></a></div>
+<div class="metro-sheet"><a href="img/KADTURNITYANANDA2.jpg"><img src="img/THUMB/KADTURNITYANANDA2.jpg"></a></div>
+	            </div>
+                <div class="content-metro" size-o="wide">
+<div class="metro-sheet"><a href="img/KADTURNITYANANDA3.jpg"><img src="img/THUMB/KADTURNITYANANDA3.jpg"></a></div>
+<div class="metro-sheet"><a href="img/KASHI1.jpg"><img src="img/THUMB/KASHI1.jpg"></a></div>
+	            </div>
+              <div class="content-metro" size-o="small">
+<div class="metro-sheet"><a href="img/KASHI2.jpg"><img src="img/THUMB/KASHI2.jpg"></a></div>
+<div class="metro-sheet"><a href="img/KUNDURSUKUMAR1.jpg"><img src="img/THUMB/KUNDURSUKUMAR1.jpg"></a></div>
+				</div>
+                <div class="content-metro" size-o="small">
+<div class="metro-sheet"><a href="img/KUNDURSUKUMAR2.jpg"><img src="img/THUMB/KUNDURSUKUMAR2.jpg"></a></div>
+<div class="metro-sheet"><a href="img/KUNDURSUKUMAR3.jpg"><img src="img/THUMB/KUNDURSUKUMAR3.jpg"></a></div>
+				</div>
+                <div class="content-metro" size-o="small">
+<div class="metro-sheet"><a href="img/LICABHI1.jpg"><img src="img/THUMB/LICABHI1.jpg"></a></div>
+<div class="metro-sheet"><a href="img/LICABHI2.jpg"><img src="img/THUMB/LICABHI2.jpg"></a></div>
+				</div>
+                <div class="content-metro" size-o="small">
+<div class="metro-sheet"><a href="img/NEW1.jpg"><img src="img/THUMB/NEW1.jpg"></a></div>
+<div class="metro-sheet"><a href="img/NEW2.jpg"><img src="img/THUMB/NEW2.jpg"></a></div>
+				</div>
+                 <div class="content-metro" size-o="normal">
+<div id="b1" class="metro-sheet"><a href="img/NEW3.jpg"><img src="img/THUMB/NEW3.jpg"></a></div>
+<div class="metro-sheet"><a href="img/NEW4.jpg"><img src="img/THUMB/NEW4.jpg"></a></div>
+	            </div>
+               
+                
+	        </div>
+	         <script type="text/javascript">
+	            $(".pixel-metro").pixel_metro({
+	            	height:"500px",
+	            	bg_metro:"images/dulieu/bg-metro3.jpg",
+	            	bg_opacity:0.55,
+	            	metro_rows:3,
+	            });
+	        </script>
+
+	    </div>
+	</section>
+            </div></div>
+            
+            
+            
+	<div id="team">
+	<div class="container">
+
+	<div class="row">
+		 <div id="wrapper">
+  <h2><div id="mytext">"Real love is not based on costly gift, world tour, candle light dinner, walks along the beach. In fact it is based on respect, compromise, care, trust, forgiveness and helping each other. With lots of love and lots of hopes i have started this journey, Dreaming about a life with endless love and happiness."</h2>
+  </div>
+</div><br>
+            <script>function autoType(id, delay, speed)
+{
+  var ori = document.getElementById(id);
+  var s = ori.innerHTML;
+  ori.innerHTML = '';
+
+  var i = 0;
+  setTimeout(function(){
+    var interval = setInterval(function(){
+    ori.innerHTML += s.charAt(i);
+    i++;
+    if(i >= s.length)
+      clearInterval(interval);
+  }, speed);    
+  }, delay);
+ 
+}
+
+var id = 'mytext';
+autoType(id, 1000, 70);
+</script>      
+		</div>
+            </div>
+	
+			</div>
+    
+   <br> <br><br><br><br> <br><br><br><br> 
+     
+      <br><br>
+	<div class="col-md-3">
+          
+        
+		
+   
+        
+        
+	</div>
+	</div>
+        </div>
+                   
+  	
+      
+ 
+	</div>
+            
+            
+            
+  <nav class="menuShare">
+        <input type="checkbox" href="#" class="menu-open" name="menu-open" id="menu-open" />
+        <label class="menu-open-button" for="menu-open"><i class="fa fa-share-alt share-icon"></i></label>
+                <a class="menu-item twitter_share_btn" href="http://twitter.com/share?url=https://scorpioninformer123.github.io/Scorpion_Informer/"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+                <a class="menu-item google_plus_share_btn" href="https://plus.google.com/share?url=https://scorpioninformer123.github.io/Scorpion_Informer/"><i class="fab fa-google" aria-hidden="true"></i></a>
+                <a class="menu-item whatsapp_share_btn" href="whatsapp://send?text=https://scorpioninformer123.github.io/Scorpion_Informer/"><i class="fab fa-whatsapp" aria-hidden="true"></i></a>
+                <a class="menu-item facebook_share_btn" href="http://www.facebook.com/sharer.php?u=https://scorpioninformer123.github.io/Scorpion_Informer/"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
+                <a class="menu-item linkedin_share_btn" href="http://www.linkedin.com/shareArticle?mini=true&url=https://scorpioninformer123.github.io/Scorpion_Informer/"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
+	</nav>
+
+    
+    
+    
+    
+    
+   
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
